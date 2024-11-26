@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Login</title>
+</head>
+<body>
+  
+<header class="vh-100 position-relative overflow-hidden bg-gray">
+  <div class="container p-0 "> 
+    <h1 class="position-absolute">Smart Login System.</h1>
+   <div class="head position-absolute top-50 start-50 translate-middle">
+    <div class="up signup start-100"><h2>UP</h2></div>
+    <div class="in signin"><h2>IN</h2></div>
+    <div class="v-holder">
+      <video class="w-100 ms-4" src="imgs/confused.mp4" autoplay loop muted></video></div>
+   <h3>SIGN</h3>
+   </div>
+   <div class="up-sec position-absolute text-center w-75 top-100 start-50 translate-middle opacity-0">
+    <input oninput="validInputs (this)" id="urName" type="text" class="form-control"  placeholder="Enter your name">
+    <input oninput="validInputs (this)" id="mail" type="email" class="form-control "  placeholder="Enter your email">
+    <input oninput="validInputs (this)" id="pass" type="password" class="form-control " id="exampleInputPassword1" placeholder="Enter password">
+    <div class="info"><h5></h5></div>
+   <div><button type="submit" class="submit">Sign Up</button></div>
+   <div class="m-3"><h5>You have an account?</h5>
+  <span class="signin">Sign in</span></div>
+   </div>
+
+
+   <div class="in-sec position-absolute text-center w-75 top-100 start-50 translate-middle opacity-0">
+      <input type="email" class="form-control  login-mail"  placeholder="Enter your email">
+      
+      <input type="password" class="form-control login-pass" id="exampleInputPassword1" placeholder="Enter password">
+    <div class="infoLogin"><h5></h5></div>
+   <div><button type="submit" class="loginBtn">Login</button></div>
+   <div class="m-3"><h5>Don't have an account?</h5>
+  <span class="signup">Sign up</span></div>
+   </div>
+   
+  </div>
+</header>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/index.js"></script>
+</body>
+</html>

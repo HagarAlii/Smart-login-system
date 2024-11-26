@@ -1,0 +1,121 @@
+:root{
+  --head-font : LuckiestGuy;
+  }
+  @font-face {
+    font-family: LuckiestGuy;
+    src: url(../fonts/LuckiestGuy-Regular.ttf);
+  }
+  body{
+   padding: 0;
+   margin: 0;
+   font-family: var(--head-font);
+   background-color: burlywood;
+  }
+  header{
+    width: 70%;
+    margin: auto;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 20px;
+  }
+  h1{
+    letter-spacing: 2px;
+    color: rgb(116, 56, 13);
+    text-shadow: 2px 2px 1px burlywood;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: run;
+    animation-duration: 3s;
+  }
+
+  @keyframes run {
+    from{
+      left: -150%;
+    }
+    to{
+      left: 50%;
+      display: none;
+    }
+  }
+
+  h3,h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px burlywood;
+  }
+  h2 , span{
+    text-shadow: 1px 2px 1px black ;
+  }
+  h5{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 1px burlywood;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  span{
+    font-size: 14px;
+    letter-spacing: 1px;
+   color: burlywood;
+   cursor: pointer;
+   transition: all 0.3s;
+  }
+  span:hover{
+    font-size: 16px;
+  }
+
+  .up , .in{
+    position: absolute;
+    cursor: pointer;
+    color: burlywood; 
+    transition: all 0.3s;
+  }
+  .up:hover{
+    transform: scale(1.2);
+  }
+  .in{
+    left: -50%;
+  }
+  .in:hover{
+    transform: scale(1.2);
+  }
+  .bg-gray{
+    background-color: rgb(241, 241, 241);
+  }
+  .v-holder{
+    width: 45px;
+  }
+  .submit , .loginBtn{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: burlywood;
+    text-shadow: 1px 2px 1px black ;
+    border: none;
+    background-color: rgba(222, 184, 135, 0.518);
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 1px black ;
+    margin-top: 15px;
+    transition: all 0.3s;
+  }
+  .submit:hover {
+    font-size: 25px;
+  }
+  .loginBtn:hover {
+    font-size: 25px;
+  }
+  input{
+    font-family:cursive;
+    letter-spacing: 1px;
+    color: burlywood;
+    box-shadow: 1px 1px 1px burlywood ;
+    margin-top: 10px;
+  }
+
+  .passVideo,.mailVideo{
+    width: 80px;
+    
+    left: 0%;
+    top: -100%;
+    opacity: 0;
+  }
